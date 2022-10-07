@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	font-family: 'Lexend', sans-serif;
+	text-transform: uppercase;
+}
+
+body {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.slider {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.slider > img {
+	width: 100%;
+}
+
+.slider > p {
+	position: absolute;
+	background-color: black;
+	font-weight: 800;
+	font-size: 1.75em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	color: white;
+}
+
+.slider.r {
+	justify-content: right;
+}
+
+h1 {
+	margin: 0.5em 0em;
+	font-size: 3em;
+}
+
+/*ANIMATIONS: */
+
+.slider:hover {
+	opacity: 0.8	;
+}
+
+.slider.l:hover > p {
+	animation-name: slideIn;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+	/*Defining the Animation*/
+
+	/*Defining the initial state*/
+	from {padding-left: 1em;}
+
+	/*Defining the final state*/
+	to {padding-left: 4em;}
+}
+
+.slider.l > p {
+	animation-name: slideOut;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideOut {
+	/*Defining the Animation*/
+
+	/*Defining the initial state*/
+	from {padding-left: 4em;}
+
+	/*Defining the final state*/
+	to {padding-left: 1em;}
+}
+
+.slider.l:hover > p {
+	animation-name: letterSpacingWide;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes letterSpacingWide {
+	from {letter-spacing: 0em;}
+	to {letter-spacing: 0.5em;}
+}
+
+.slider.l > p {
+	animation-name: letterSpacingInwards;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes letterSpacingInwards {
+	from {letter-spacing: 0.5em;}
+	to {letter-spacing: 0em;}
+}
+
+.slider.r:hover > p {
+	animation-name: slideIn;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+		/*Defining the Animation*/
+
+	/*Defining the initial state*/
+	from {padding-right: 1em;}
+
+	/*Defining the final state*/
+	to {padding-right: 4em;}
+}
+
+.slider.r > p {
+	animation-name: slideOut;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideOut {
+		/*Defining the Animation*/
+
+	/*Defining the initial state*/
+	from {padding-right: 4em;}
+
+	/*Defining the final state*/
+	to {padding-right: 1em;}
+}
+
+.slider.r:hover > p {
+	animation-name: letterSpacingWide;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes letterSpacingWide {
+	from {letter-spacing: 0em;}
+	to {letter-spacing: 0.5em;}
+}
+
+.slider.r > p {
+	animation-name: letterSpacingInwards;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes letterSpacingInwards {
+	from {letter-spacing: 0.5em;}
+	to {letter-spacing: 0em;}
+}
+
+/*ANIMATION LINES END HERE*/
+
+h2 {
+	position: absolute;
+	opacity: 10%;
+	top: 0%;
+}
+

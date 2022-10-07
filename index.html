@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Baking Master Menu</title>
+
+	<!-- Links -->
+	<link rel="icon" href="images/Web icon.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<script type="text/javascript">
+		function popUp() {
+			let password = prompt("Please enter your password!!!")
+			switch(password) {
+				case "Jackie Chan":
+					window.location.replace("https://www.youtube.com")
+					break;
+				default:
+					alert("Wrong password, you are being hacked now")
+			}
+		}
+	</script>
+
+</head>	
+<body>
+
+	<h1>Baking Master Menu</h1>
+	<h2 id="HB" onclick="popUp()">
+		Hidden
+	</h2>
+	<a href="fc/fcd.html">
+		<div class="slider l">
+			<p>Fried Chicken</p>
+			<img src="images/FC/Front Page Slider.png">
+		</div>
+	</a>
+
+	<div class="slider r">
+		<p>Sushi Box</p>
+		<img src="images/SB/Front Page Slider.png">
+	</div>
+	<div class="slider l">
+		<p>Donuts</p>
+		<img src="images/D/Front Page Slider.png">
+	</div>
+</body>
+</html>
