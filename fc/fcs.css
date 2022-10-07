@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	font-family: 'Lexend', sans-serif;
+	text-transform: uppercase;
+}
+
+body {
+	background-color: white;
+	text-align: center;
+}
+
+.section {
+	width: 100vw;
+}
+
+#banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+}
+
+#banner > img {
+	width: 100%;
+}
+
+#banner > h1 {
+	position: absolute;
+	background-color: black;
+	color: white;
+	padding: 1em;
+	font-size: 3em;
+}
+
+#d {
+	margin: 1em;
+	font-size: 1.5em;
+}
+
+#r {
+	display: flex;
+}
+
+#r img {
+	width: 85%;
+}
+
+#r ol {
+	width: 40em;
+	line-height: 2em;
+	margin-right: 2em;
+	margin-top: 0.001em;
+}
+
+li {
+	margin-bottom: 2em;
+}
+
+#bb {
+	position: absolute;
+	width: 2em;
+	top: 0%;
+	left: 0%;
+	margin-left	: 0.8em;
+	margin-top: 0.5em;
+}
